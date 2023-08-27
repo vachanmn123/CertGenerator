@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>UnoStruct - An introduction to Structures and Unions in C</title>
+    <meta name="description" content="feed back on UnoStruct - An introduction to Structures and Unions in C">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #1b0b54; color: white;">
+    <center>
+        <h4><small>Bapuji Educational Association</small><br />Bapuji Institute of
+            Engineering and
+            Technology<br />Davanagere - 577004, Karnataka<br /><br />Department of Computer Science and Engineering
+        </h4>
+        <h1>UnoStruct<br />An introduction to Structures and Unions in C</h1>
+        <p><b>By: Dr. Abdul Razak</b></p>
+        <hr />
+
+        <h1>Feed Back form</h1>
+        <hr />
+        <h3>Thank you for your feedback!</h3>
+        <img src="{{certificate}}" alt="UnoStruct" style="width: 100%;">
+        <button class="btn btn-primary btn-block " onclick="share()">Share</button>
+    </center>
+
+    <script>
+        async function share() {
+            if (!navigator.canShare) {
+                alert("Your browser does not support sharing");
+                return;
+            }
+            const img = await fetch("{{certificate}}", {
+                method: "GET"
+            });
+            const blob = await img.blob();
+            const file = new File([blob], "certificate.png", { type: 'image/png' });
+            navigator.share({
+                title: "UnoStruct Certificate",
+                text: "I have completed UnoStruct - An introduction to Structures and Unions in C",
+                files: [file]
+            });
+        }
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

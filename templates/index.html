@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>UnoStruct - An introduction to Structures and Unions in C</title>
+    <meta name="description" content="feed back on UnoStruct - An introduction to Structures and Unions in C">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: #1b0b54; color: white;">
+    <center>
+        <h4><small>Bapuji Educational Association (Regd.)</small><br />Bapuji Institute of
+            Engineering and
+            Technology<br />Davanagere - 577004, Karnataka<br /><br />Department of Computer Science and Engineering
+        </h4>
+        <h1>UnoStruct<br />An introduction to Structures and Unions in C</h1>
+        <p><b>By: Dr. Abdul Razak</b></p>
+        <hr />
+
+        <h1>Feed Back form</h1>
+        <hr />
+    </center>
+    <div style="padding: 5rem;">
+        <form action="/submitform" method="post">
+            <div class="mb-3" style="margin-bottom: 3rem;">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" name="name" required>
+            </div>
+            <div class="mb-3" style="margin-bottom: 3rem;">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" name="email"
+                    required>
+            </div>
+            <div class="mb-3" style="margin-bottom: 3rem;">
+                <label for="branch" class="form-label">Branch</label>
+                <select name="branch" id="branch" aria-label="Select your branch" class="form-select form-control">
+                    <option value="CSBS">Computer Science and Business Systems</option>
+                    <option value="IS">Information Science Engineering</option>
+                    <option value="BT">Biotechnology Engineering</option>
+                </select>
+            </div>
+            <div class="mb-4" style="margin-bottom: 4rem;">
+                <label for="q1rating">1. How would you rate the overall quality of the event?</label>
+                <div class="" style="justify-content: space-between;">
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q1rating1" name="q1rating" value="1"> <label for="q1rating1">Very
+                            Poor</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q1rating2" name="q1rating" value="2"> <label for="q1rating2">Poor</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q1rating3" name="q1rating" value="3"> <label
+                            for="q1rating3">Average</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q1rating4" name="q1rating" value="4"> <label for="q1rating4">Good</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q1rating5" name="q1rating" value="5"> <label for="q1rating5">Very Good</label>
+                        <br /></span>
+                </div>
+            </div>
+            <div class="mb-4" style="margin-bottom: 4rem;">
+                <label for="q2rating">2. How effective was the expert speaker's explaination of structures and unions in
+                    C
+                    programming?</label>
+                <div class="" style="justify-content: space-between;">
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q2rating1" name="q2rating" value="1"> <label for="q2rating1">Very
+                            Unaffective</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q2rating2" name="q2rating" value="2"> <label
+                            for="q2rating2">Unaffective</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q2rating3" name="q2rating" value="3"> <label
+                            for="q2rating3">Neutral</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q2rating4" name="q2rating" value="4"> <label
+                            for="q2rating4">Effective</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q2rating5" name="q2rating" value="5"> <label for="q2rating5">Very
+                            Effective</label><br /></span>
+                </div>
+            </div>
+            <div class="mb-4" style="margin-bottom: 4rem;">
+                <label for="q3rating">3. Did you leave the event with an understanding of structures and unions
+                    in C
+                    programming?</label>
+                <div class="" style="justify-content: space-between;">
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q3rating1" name="q3rating" value="1"> <label for="q3rating1">No
+                            understanding</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q3rating2" name="q3rating" value="2"> <label for="q3rating2">Not
+                            clear</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q3rating3" name="q3rating" value="3"> <label
+                            for="q3rating3">Neutral</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q3rating4" name="q3rating" value="4"> <label for="q3rating4">Clear</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q3rating5" name="q3rating" value="5"> <label for="q3rating5">Very
+                            clear</label><br /></span>
+                </div>
+            </div>
+            <div class="mb-4" style="margin-bottom: 4rem;">
+                <label for="q4rating">4. Do you feel that the knowledge gained from this event can be practically
+                    applied
+                    in your C programming projects or
+                    coursework?</label>
+                <div class="" style="justify-content: space-between;">
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q4rating1" name="q4rating" value="1"> <label for="q4rating1">Strongly
+                            disagree</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q4rating2" name="q4rating" value="2"> <label
+                            for="q4rating2">Disagree</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q4rating3" name="q4rating" value="3"> <label
+                            for="q4rating3">Neutral</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q4rating4" name="q4rating" value="4"> <label for="q4rating4">Agree</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q4rating5" name="q4rating" value="5"> <label for="q4rating5">Strongly
+                            Agree</label><br /></span>
+                </div>
+            </div>
+            <div class="mb-4" style="margin-bottom: 4rem;">
+                <label for="q5rating">5. How likely are you to recommend events with this speaker
+                    to your peers?</label>
+                <div class="" style="justify-content: space-between;">
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q5rating1" name="q5rating" value="1"> <label for="q5rating1">Very
+                            unlikely</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q5rating2" name="q5rating" value="2"> <label
+                            for="q5rating2">Unlikely</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q5rating3" name="q5rating" value="3"> <label
+                            for="q5rating3">Neutral</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q5rating4" name="q5rating" value="4"> <label for="q5rating4">Likely</label><br /></span>
+                    <span style="padding-left: 1rem; padding-right: 1rem;"><input class="form-check-input" type="radio"
+                            id="q5rating5" name="q5rating" value="5"> <label for="q5rating5">Very
+                            likely</label><br /></span>
+                </div>
+            </div>
+            <center>
+                <div class="mb3">
+                    <button type="submit" class="btn btn-primary"
+                        style="padding-left: 2rem; padding-right: 2rem; margin: 2rem;">
+                        Submit
+                    </button>
+                    <button type="reset" class="btn btn-danger"
+                        style="padding-left: 2rem; padding-right: 2rem; margin: 2rem;">
+                        Reset
+                    </button>
+                </div>
+            </center>
+        </form>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" />
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" />
+
+</body>
+
+</html>
